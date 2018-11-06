@@ -12,9 +12,6 @@ import android.widget.TextView;
 import cn.jpush.im.android.api.JMessageClient;
 import jiguang.chat.R;
 
-/**
- * Created by ${chenyn} on 2017/2/22.
- */
 
 public class AboutJChatActivity extends BaseActivity {
 
@@ -43,7 +40,7 @@ public class AboutJChatActivity extends BaseActivity {
         mJiguang.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Uri uri = Uri.parse("https://github.com/blankfu");
+                Uri uri = Uri.parse("https://github.com/blankfu/IMChat/tree/master");
                 Intent intent = new Intent(Intent.ACTION_VIEW, uri);
                 startActivity(intent);
             }
