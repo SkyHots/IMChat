@@ -75,10 +75,11 @@
             android:name=".activity.LoginActivity"
             android:screenOrientation="portrait"
             />
+        <!--AppBaseTheme-->
         <activity
             android:name=".activity.MainActivity"
             android:screenOrientation="portrait"
-            android:theme="@style/AppBaseTheme"
+            android:theme="@style/BaseThemes"
             android:windowSoftInputMode="adjustPan|stateHidden"/>
         <activity android:name=".activity.BaseActivity"/>
         <activity

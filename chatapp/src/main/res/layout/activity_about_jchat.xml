@@ -84,7 +84,7 @@
 
         <TextView
             style="@style/info_left_style"
-            android:text="官方网站"/>
+            android:text="个人网站"/>
 
         <ImageView
             android:layout_width="wrap_content"

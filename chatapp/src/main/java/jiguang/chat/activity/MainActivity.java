@@ -44,13 +44,25 @@ public class MainActivity extends FragmentActivity {
         mMainController.sortConvList();
         super.onResume();
     }
+
+
     @Override
     protected void onDestroy() {
         super.onDestroy();
     }
 
-    @Override
     public boolean onKeyDown(int keyCode, KeyEvent event) {
-        return keyCode == KeyEvent.KEYCODE_BACK;
+        if (keyCode == KeyEvent.KEYCODE_BACK) {
+            moveTaskToBack(false);
+            return true;
+        }
+        return super.onKeyDown(keyCode, event);
     }
+
+    @Override
+    public void onBackPressed() {
+        moveTaskToBack(false);
+        super.onBackPressed();
+    }
+    
 }

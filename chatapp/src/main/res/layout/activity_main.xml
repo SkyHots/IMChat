@@ -11,6 +11,7 @@
 
 
         <LinearLayout
+            android:background="@color/white"
             android:id="@+id/actionbar_layout_tmp"
             android:layout_width="match_parent"
             android:layout_height="53.33dp"
